@@ -30,7 +30,7 @@ li {
     /* background-color: rgb(10, 10, 10); */
     padding: 5px;
     border-style: solid;
-    border-width: 0px;
+    border-width: 0;
     border-top-width: 1px;
     border-bottom-width: 1px;
     border-color: grey;
@@ -38,11 +38,22 @@ li {
 li:nth-child(odd) {
     border-style: none;
 }
+ul > li:last-child {
+    border-bottom: none;
+}
+
 body {
     padding-left: 20%;
     padding-right: 20%;
     padding-top: 100px;
     background: black;
     color: white;
-    font-family: "Manrope";
+    font-family: "Manrope", sans-serif;
+}
+
+.container {
+    margin-left: 40px;
+}
+.socialMedia > a {
+    padding-left: 6px;
 }
